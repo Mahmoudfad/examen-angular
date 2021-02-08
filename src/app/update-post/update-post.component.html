@@ -1,0 +1,30 @@
+<form [formGroup]="listFormModified">
+    <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1">@</span>
+        <input type="text" formControlName="titre" class="form-control" placeholder="Titre" aria-label="Titre" aria-describedby="basic-addon1">
+      </div>
+
+      <div class="input-group">
+        <span class="input-group-text">Decription</span>
+        <textarea class="form-control" formControlName="description"  aria-label="With textarea"></textarea>
+      </div>
+
+      <div class="input-group mb-3">
+        <label class="input-group-text" for="inputGroupSelect01">Catégorie</label>
+        <select class="form-select" formControlName="categorie"  id="inputGroupSelect01">
+          <option selected>Choose...</option>
+          <option value="Sport">Sport</option>
+          <option value="Technologies">Technologies</option>
+          <option value="Économie">Économie</option>
+          <option value="Société">Société</option>
+          <option value="Culture">Culture</option>
+        </select>
+      </div>
+
+      <div class="mb-3">
+        <label class="input-group-text" for="inputGroupSelect01">Date</label>
+                <input type="date"  formControlName="date" class="form-control" >
+      </div>
+      <br><br><br>
+
+</form>

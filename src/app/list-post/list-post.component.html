@@ -1,0 +1,7 @@
+post:<ul *ngFor="let post of formulaire; let i=index"> 
+
+
+
+    <li>{{ post.titre }}</li> 
+    <button type="button"  class="btn btn-danger" (click)="delete(i)">supprimer</button>
+    <a [routerLink]="['/update',post.titre]">modifier</a>                                    
